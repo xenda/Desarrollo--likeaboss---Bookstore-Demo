@@ -1,0 +1,15 @@
+<%= simple_form_for(@user) do |f| %>
+
+  <div class="field">
+    <%= f.input :name %>
+  </div>
+
+  <div class="field">
+    <%= f.association :books, :as => :check_boxes %>
+  </div>
+
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
